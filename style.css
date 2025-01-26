@@ -1,0 +1,269 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* background: #2F4F4F; */
+    /* color: #000; */
+    background-image: url('bitmap.svg'); /* Caminho para a imagem SVG */
+    background-size: cover; /* Ajusta o tamanho para cobrir a viewport */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+}
+
+/* utilizada na body */
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* utilizada na body */
+.arial {
+    font-family: 'Arial', sans-serif;
+}
+
+/* utilizada nas tags h1, h2, h3, h4 */
+.georgia{
+    font-family: 'Georgia', serif;
+}
+
+/* utilizada nas tags p */
+.times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* utilizada pra exibição de códigos */
+.courrier {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: #0d569f; /* cor dos links com um tom azul mais escuro */
+}
+
+a:hover, a:focus {
+    color: #66a6de; /* Azul um pouco mais escuro para o estado hover/focus */
+}
+
+/* inicio do cores do nav menus */
+.color-text-nav {
+    color: #FFF;        
+}
+
+.color-text-nav:hover, .color-text-nav:focus {
+    color: #7facd1;
+}
+/* fim do cores do nav menus */
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+}
+
+.timeline-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.circle-container {
+    flex: 0 0 25%; /* mantém a ocupação da tela em 25% do total à esquerda */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #00008B; /* Azul escuro */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    border: 5px solid white; /* Borda externa branca */
+    box-shadow: 0 0 0 5px #007bff, 0 0 0 10px white; /* Borda interna azul e mais uma borda branca */
+    position: relative;
+    z-index: 1;
+}    
+
+.line-circle {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    margin-left: 12.45%; /* Centraliza a linha na div */       
+}
+
+.description-container {
+    flex: 0 0 75%;
+    min-height: 200px;
+    /* background-color: #f9f9f9; */
+    display: flex;
+    flex-direction: column;      
+    border-bottom: 2px solid #2F4F4F; /* Borda superior cinza escuro de 2px */
+    justify-content: center; /* centralização vertical */ 
+}
+
+.description-container-last {
+    flex: 0 0 75%; /* mantém a ocupação da tela de 75% to tamanho total à direita*/
+    min-height: 200px;
+    /* background-color: #f9f9f9; */
+    display: flex;
+    flex-direction: column;        
+    justify-content: center; /* centralização vertical */
+}
+
+.description-item {
+    min-height: 160px;
+    min-width: none;
+    flex: 1;
+    padding: 2px;
+    /* background-color: #f9f9f9;         */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column;
+}    
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.card, .card-body {
+    background-color: transparent;
+}
+
+.titles {
+    flex: 0 0 25%;
+    height: 200px;
+    width: 350px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.titles h3 {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    /* centraliza verticalmente o h3 */
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+}
+
+footer { 
+    width: 100%;
+    height: 60px;        
+    background-color: #708090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;        
+    /* border-top: 2px solid #ccc; */
+    bottom: 0;
+    left: 0;
+}
+
+/* para configurar impressão em PDF */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* quebra a página a partir da inclusão do elemento com essa classe */
+    .page-break {
+        page-break-before: always;
+    }
+
+    /* enviar elemento para a proxima página sem cortar ele na quegra de páginas */
+    .avoid-page-break {
+        page-break-inside: avoid;
+    }
+
+    .background-image {
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* não imprimir no PDF os elementos que contenham essa classe */
+    .no-print {
+        display: none;
+    }
+
+    @page {
+        size: A4;
+        margin: 1cm;
+    }
+}
+
+/* inicio da configuração dos elemntos contato (email e what´s app) */
+#contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #1C7ECF;
+}
+
+#whatsapp-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#whatsapp-button:hover {
+    background-color: #1EBB57;
+}
+/* fim da configuração dos elemntos contato (email e what´s app) */

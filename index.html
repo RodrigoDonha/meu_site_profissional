@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     
     <title>Rodrigo Daniel Donha</title>
 </head>
@@ -12,7 +13,7 @@
     <div class="content" style="padding-top: 1%;">
 
         <!-- início do menu de navegação -->
-        <div class="nav nav-pills justify-content-center" style="position: fixed; top: 0; width: 100%; height: 60px; align-items: center; z-index: 1000; background-color: #708090;">            
+        <div class="nav nav-pills justify-content-center no-print" style="position: fixed; top: 0; width: 100%; height: 60px; align-items: center; z-index: 1000; background-color: #708090;">            
             <a href="#home" class="nav-item nav-link color-text-nav"><strong>Home</strong></a>
             <a href="#historico_academico" class="nav-item nav-link color-text-nav"><strong>Histórico Acadêmico</strong></a>
             <a href="#historico_profissional" class="nav-item nav-link color-text-nav"><strong>Histórico Profissional</strong></a>
@@ -63,7 +64,7 @@
                     diante de uma turma iniciada com quarenta alunos, mostrando o quão completo e exigente foi o curso.
                 </p>
                 
-                <p>
+                <p class="no-print">
                     <a 
                         id="button-colapse-leia-mais-leia-menos-academico" 
                         onclick="mostrarMais('button-colapse-leia-mais-leia-menos-academico')"
@@ -98,9 +99,6 @@
                         </p>
                     </div>
                 </div>
-
-                
-                
             </div>            
         </section>
         <!-- fim da section Histórico Acadêmico -->
@@ -118,14 +116,14 @@
                     <div class="timeline-item">
                         <div class="line-circle"></div>
                         <div class="circle-container">
-                            <div class="circle">2017</div>
+                            <div class="circle avoid-page-break">2017</div>
                         </div>
                         
                         <div class="description-container">
                             <br>
                             <h2>Sistema EstaPark</h2>
                             <p>Sistema para um estacionamento nomeado de EstaPark.
-                                <p>
+                                <p class="no-print">
                                     <a
                                         id="button-colapse-leia-mais-leia-menos-esta-park" 
                                         onclick="mostrarMais('button-colapse-leia-mais-leia-menos-esta-park')" 
@@ -151,42 +149,45 @@
                                                     Bematech adquirida pelo proprietário do estacionamento.
                                                 </li>
                                             </ul>
-                                            Outros requisitos "desejáveis": 
-                                            <ul>
-                                                <li>deveria ser instalado em um notebook.</li>
-                                                <li>ser independente de uso de rede ou internet.</li>
-                                                <li>que fosse de baixo custo de manutenção.</li>
-                                            </ul>
-                                            Definições:
-                                            <ul>
-                                                <li>Linguagem C#:
-                                                    <span>
-                                                        cuja plataforma de desenvolvimento seria o Visual Studio que nos possibilitava 
-                                                        criar as telas e gerar o executável e dlls, capaz de ser instalado em um notebook 
-                                                        ou computador sem a necessidade de um acesso a rede, porém com necessidade de acesso 
-                                                        ao uma porta USB capaz de se comunicar com a impressora.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    Prazo de entrega:
-                                                    <span>
-                                                        conclusão da primeira fase em oito semanas, o cliente gostou e solicitou novas 
-                                                        funcionalidades como por exemplo o controle de mensalistas, o controle de convênios 
-                                                        com clientes de empresas próximas, relatórios: 
-                                                        <i>diários, semanais, quinzenais e mensais</i>.
-                                                        <br>
-                                                        A conclusão da segunda fase se deu em mais cinco meses, 
-                                                        totalizando sete meses de desenvolvimento.
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                            <!-- Ganhos
-                                            <ul>
-                                                <li>Validação do estágio da Faculdade com o sistema completo</li>
-                                                <li>Reconhecimento do potencial profissional</li>
-                                                <li>Valor financeiro simbólico porém recebi pelo trabalho executado</li>
-                                                <li>Iniciação de StartUp no seguimento de desenvolvimento de sistemas</li>
-                                            </ul> -->
+                                            
+                                            <div class="avoid-page-break">
+                                                Outros requisitos "desejáveis": 
+                                                <ul>
+                                                    <li>deveria ser instalado em um notebook.</li>
+                                                    <li>ser independente de uso de rede ou internet.</li>
+                                                    <li>que fosse de baixo custo de manutenção.</li>
+                                                </ul>
+                                                Definições:
+                                                <ul>
+                                                    <li>Linguagem C#:
+                                                        <span>
+                                                            cuja plataforma de desenvolvimento seria o Visual Studio que nos possibilitava 
+                                                            criar as telas e gerar o executável e dlls, capaz de ser instalado em um notebook 
+                                                            ou computador sem a necessidade de um acesso a rede, porém com necessidade de acesso 
+                                                            ao uma porta USB capaz de se comunicar com a impressora.
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        Prazo de entrega:
+                                                        <span>
+                                                            conclusão da primeira fase em oito semanas, o cliente gostou e solicitou novas 
+                                                            funcionalidades como por exemplo o controle de mensalistas, o controle de convênios 
+                                                            com clientes de empresas próximas, relatórios: 
+                                                            <i>diários, semanais, quinzenais e mensais</i>.
+                                                            <br>
+                                                            A conclusão da segunda fase se deu em mais cinco meses, 
+                                                            totalizando sete meses de desenvolvimento.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <!-- Ganhos
+                                                <ul>
+                                                    <li>Validação do estágio da Faculdade com o sistema completo</li>
+                                                    <li>Reconhecimento do potencial profissional</li>
+                                                    <li>Valor financeiro simbólico porém recebi pelo trabalho executado</li>
+                                                    <li>Iniciação de StartUp no seguimento de desenvolvimento de sistemas</li>
+                                                </ul> -->
+                                            </div>                                            
                                         </span>                            
                                     </div>
                                 </div>
@@ -200,7 +201,7 @@
                 <div class="timeline-item">
                     <div class="line-circle"></div>
                     <div class="circle-container">
-                        <div class="circle">2018</div>
+                        <div class="circle avoid-page-break">2018</div>
                     </div>
 
                     <div class="description-container">
@@ -209,7 +210,7 @@
                             <h2>Sistema InoxERP</h2>
                             <p>Criação de um sistema de emissão de orçamentos e propostas de uma empresa fabricante de materiais em aço InoxERP
                                 <br>
-                                <p>
+                                <p class="no-print">
                                     <a 
                                         id="button-colapse-leia-mais-leia-menos-inox-erp" 
                                         onclick="mostrarMais('button-colapse-leia-mais-leia-menos-inox-erp')"
@@ -276,7 +277,7 @@
                 <div class="timeline-item">
                     <div class="line-circle"></div>
                     <div class="circle-container">
-                        <div class="circle">2019</div>
+                        <div class="circle avoid-page-break">2019</div>
                     </div>
                     <div class="description-container">
                         <div>
@@ -286,7 +287,7 @@
                                 Criação de um sistema de vendas online para dois clientes, um deles uma Farmácia 
                                 e outro uma Fabricante de produtos farmaceticos (suplementos: chás e gel de massagem).
                             
-                                <p>
+                                <p class="no-print">
                                     <a 
                                         id="button-colapse-leia-mais-leia-menos-ecommerce" 
                                         onclick="mostrarMais('button-colapse-leia-mais-leia-menos-ecommerce')"
@@ -338,7 +339,7 @@
                 <div class="timeline-item">
                     <div class="line-circle"></div>
                     <div class="circle-container">
-                        <div class="circle">2020</div>
+                        <div class="circle avoid-page-break">2020</div>
                     </div>
                     <div class="description-container">
                         <div>
@@ -347,7 +348,7 @@
                             <p>
                                 Criação de um site e um aplicativo para Android e IOS de um portal de noticias do interior do pontal do parana-panema.
                             
-                                <p>
+                                <p class="no-print">
                                     <a 
                                         id="button-colapse-leia-mais-leia-menos-no-pontal" 
                                         onclick="mostrarMais('button-colapse-leia-mais-leia-menos-no-pontal')"
@@ -373,27 +374,29 @@
                                                 <li>Moderar Comentários.</li>    
                                                 <li>Contato.</li>                                                               
                                             </ul>
-                                            Definições:
-                                            <ul>
-                                                <li>Linguagem PHP para o site.</li>
-                                                <li>Banco de Dados MySql.</li>
-                                                <li>Servidor Windows Server (AWS).</li>
-                                                <li>Sem uso de Framework.</li>
-                                                <li>Para os Apps utilzei o Framework IONIC que fez o mesmo app para ambos (Android e IOS).
-                                                    <br>
-                                                    <span>
-                                                        - No IONIC utilizei o espelhamento de URL assim tinha o mesmo conteúdo do site mas com
-                                                        exibição no App de maneira responsiva para aplicativos móveis. Acredito que hoje esta
-                                                        funcionalidade não esteja mais disponível.
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    Prazo de entrega:
-                                                    <span>
-                                                        6 meses do inicio, entreguei com 5 meses o site e Apps publicados inclusive na Apple Store.
-                                                    </span>
-                                                </li>
-                                            </ul>
+                                            <div class="avoid-page-break">                                            
+                                                Definições:
+                                                <ul>
+                                                    <li>Linguagem PHP para o site.</li>
+                                                    <li>Banco de Dados MySql.</li>
+                                                    <li>Servidor Windows Server (AWS).</li>
+                                                    <li>Sem uso de Framework.</li>
+                                                    <li>Para os Apps utilzei o Framework IONIC que fez o mesmo app para ambos (Android e IOS).
+                                                        <br>
+                                                        <span>
+                                                            - No IONIC utilizei o espelhamento de URL assim tinha o mesmo conteúdo do site mas com
+                                                            exibição no App de maneira responsiva para aplicativos móveis. Acredito que hoje esta
+                                                            funcionalidade não esteja mais disponível.
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        Prazo de entrega:
+                                                        <span>
+                                                            6 meses do inicio, entreguei com 5 meses o site e Apps publicados inclusive na Apple Store.
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </span>                            
                                     </div>
                                 </div>
@@ -407,7 +410,7 @@
                 <div class="timeline-item">
                     <div class="line-circle"></div>
                     <div class="circle-container">
-                        <div class="circle">2021</div>
+                        <div class="circle avoid-page-break">2021</div>
                     </div>
                     <div class="description-container">
                         <div>
@@ -427,7 +430,7 @@
                                 na execução de manutenção e melhorias em sistema de orçamentos de kits solares, 
                                 administração de banco de dados, servidor Linux, correção de falhas e eliminação de vírus.
                             
-                                <p>
+                                <p class="no-print">
                                     <a 
                                         id="button-colapse-leia-mais-leia-invicto" 
                                         onclick="mostrarMais('button-colapse-leia-mais-leia-invicto')"
@@ -476,7 +479,7 @@
                 <div class="timeline-item">
                     <div class="line-circle"></div>
                     <div class="circle-container">
-                        <div class="circle">2022<br>a<br>2025</div>
+                        <div class="circle avoid-page-break">2022<br>a<br>2025</div>
                     </div>
                     <div class="description-container-last">
                         <div>
@@ -627,6 +630,29 @@
         </section>
         <!-- fim da section FrontEnd -->
 
+        <br>
+        <hr style="border: 0; height: 1px; background: #ccc; margin: 5px 0;">
+        <br>
+
+        <!-- inicio da section de contato -->
+        <section id="contact">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form" method="POST" action="send-email.php">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <div class="g-recaptcha" data-sitekey="SEU_SITE_KEY"></div>
+                <button type="submit">Enviar</button>
+            </form>
+            <button id="whatsapp-button">Enviar pelo WhatsApp</button>
+        </section>
+        <!-- fim da section de contato -->
+
+        <br>
+        
         <!-- início do rodapé -->
         <footer>
             Todos os direitos reservados &copy; Rodrigo Daniel Donha <span id="anoAtual"></span>
@@ -640,190 +666,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-    <script>
-        function mostrarMais(id) {
-            // pega as propriedades do botão para mudar a descrição dele
-            var botaoLerMais = document.getElementById(id);
-
-            if (botaoLerMais.innerHTML === "Ler menos...") {       
-                document.getElementById(id).innerHTML = "Leia mais..."; // Muda o texto do botão
-            } else {
-                document.getElementById(id).innerHTML = "Ler menos..."; // Muda o texto do botão
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            var anoAtual = new Date().getFullYear();
-            document.getElementById("anoAtual").textContent = anoAtual;
-        });
-        
-    </script>
+    <script src="script.js"></script> <!-- Link para o arquivo scripts.js -->
 </body>
 </html>
 
-<style>
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        /* background: #2F4F4F; */
-        /* color: #000; */
-        background-image: url('bitmap.svg'); /* Caminho para a imagem SVG */
-        background-size: cover; /* Ajusta o tamanho para cobrir a viewport */
-        background-repeat: no-repeat; /* Evita repetição da imagem */
-        background-position: center; /* Centraliza a imagem */
-    }
-
-    /* utilizada na body */
-    .roboto {
-        font-family: 'Roboto', sans-serif;
-    }
-
-    /* utilizada na body */
-    .arial {
-        font-family: 'Arial', sans-serif;
-    }
-
-    /* utilizada nas tags h1, h2, h3, h4 */
-    .georgia{
-        font-family: 'Georgia', serif;
-    }
-
-    /* utilizada nas tags p */
-    .times {
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    /* utilizada pra exibição de códigos */
-    .courrier {
-        font-family: 'Courier New', Courier, monospace;
-    }
-    
-    .color-text-nav {
-        color: #FFF;
-    }
-
-    .timeline-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;        
-    }
-
-    .timeline-item {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-    }
-
-    .circle-container {
-        flex: 0 0 25%; /* mantém a ocupação da tela em 25% do total à esquerda */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-
-    .circle {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        background-color: #00008B; /* Azul escuro */
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        color: white;
-        border: 5px solid white; /* Borda externa branca */
-        box-shadow: 0 0 0 5px #007bff, 0 0 0 10px white; /* Borda interna azul e mais uma borda branca */
-        position: relative;
-        z-index: 1;
-    }    
-
-    .line-circle {
-        content: '';
-        background-color: #000;
-        position: absolute;
-        width: 5px;
-        height: 100%;
-        margin-left: 12.45%; /* Centraliza a linha na div */       
-    }
-
-    .description-container {
-        flex: 0 0 75%;
-        min-height: 200px;
-        /* background-color: #f9f9f9; */
-        display: flex;
-        flex-direction: column;      
-        border-bottom: 2px solid #2F4F4F; /* Borda superior cinza escuro de 2px */
-        justify-content: center; /* centralização vertical */ 
-    }
-
-    .description-container-last {
-        flex: 0 0 75%; /* mantém a ocupação da tela de 75% to tamanho total à direita*/
-        min-height: 200px;
-        /* background-color: #f9f9f9; */
-        display: flex;
-        flex-direction: column;        
-        justify-content: center; /* centralização vertical */
-    }
-
-    .description-item {
-        min-height: 160px;
-        min-width: none;
-        flex: 1;
-        padding: 2px;
-        /* background-color: #f9f9f9;         */
-        display: flex;
-        align-items: center; /* Centraliza verticalmente */
-        flex-direction: column;
-    }    
-
-    .collapse:not(.show) {
-        display: none;
-    }
-
-    .card, .card-body {
-        background-color: transparent;
-    }
-
-    .titles {
-        flex: 0 0 25%;
-        height: 200px;
-        width: 350px;
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        align-items: center; /* Centraliza verticalmente */
-    }
-
-    .titles h3 {
-        height: 100%;
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        text-align: center;
-        /* centraliza verticalmente o h3 */
-        display: flex;
-        align-items: center;
-        justify-content: center;        
-    }
-
-    footer { 
-        width: 100%;
-        height: 60px;        
-        background-color: #708090;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FFF;        
-        /* border-top: 2px solid #ccc; */
-        bottom: 0;
-        left: 0;
-    }
-    
-</style>
