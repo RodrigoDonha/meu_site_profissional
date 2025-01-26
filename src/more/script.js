@@ -41,4 +41,16 @@ document.getElementById('whatsapp-button').addEventListener('click', function() 
     var url = 'https://api.whatsapp.com/send?phone=+5518981182182&text=Nome:%20' + encodeURIComponent(name) + '%0AMensagem:%20' + encodeURIComponent(message);
     window.open(url, '_blank');
 });
+
+// mensagem de alerta de envio de email ou erro
+document.addEventListener("DOMContentLoaded", function() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.has("status") && params.get("status") === "success") {
+        const alertBox = document.getElementById("successAlert");
+        alertBox.style.display = "block";
+        setTimeout(() => {
+            alertBox.style.display = "none";
+        }, 3000); // Ocultar o alerta após 3 segundos
+    }
+});
 // fim das das funções da sessão de contato (e-mail e what´s app)

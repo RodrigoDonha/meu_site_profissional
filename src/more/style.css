@@ -5,7 +5,7 @@ body, html {
     width: 100%;
     /* background: #2F4F4F; */
     /* color: #000; */
-    background-image: url('bitmap.svg'); /* Caminho para a imagem SVG */
+    background-image: url('../more/bitmap.svg'); /* Caminho para a imagem SVG */
     background-size: cover; /* Ajusta o tamanho para cobrir a viewport */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-position: center; /* Centraliza a imagem */
@@ -265,5 +265,19 @@ footer {
 
 #whatsapp-button:hover {
     background-color: #1EBB57;
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 /* fim da configuração dos elemntos contato (email e what´s app) */

@@ -31,8 +31,8 @@ Aviso: caso você venha a publicar este seu projeto em sua conta no GitHub, não
 seu repositório público, assim como o meu está, você deixará suas informações sensíveis disponíveis a qualquer pessoa que venha
 a acessar seu repositório.
 
-4. No arquivo send-email.php, você precisará fazer uma ultima configuração, que são as configurações de SMTP, STMPAuth, SMTPSecure e Port. Essas configurações são adquiridas em sua conta de e-mail, a mesma que você informará os dados no arquivo.env, então vá até o arquivo munido dessas informaçoes e faça a alteração lá.
+4. No arquivo send-email.php, você precisará fazer uma ultima configuração, que são as configurações de SMTP, STMPAuth, SMTPSecure e Port. Essas configurações são adquiridas em sua conta de e-mail ou seja, com seu provedor de e-mail, então vá até o arquivo munido dessas informaçoes e faça a alteração lá.
+
+5. Devido a questões de estruturação do projeto, os arquivos CSS (style.css), JS js (script.js) e PHP (send-email.php) estão no diretório src/more/ e o arquivo .php no src/service.
 
 Pronto!
-
-

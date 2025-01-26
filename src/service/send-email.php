@@ -2,9 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
-
-
+require __DIR__ . '/../../vendor/autoload.php';
 
 // var_dump($senha);
 // print_r($_ENV);
@@ -19,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $mail = new PHPMailer(true);
     try {
-        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
         $dotenv->load();
 
         $senha = $_ENV['MINHA_SENHA'];
@@ -46,7 +44,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ;
 
         $mail->send();
-        echo 'Mensagem enviada com sucesso!';
+        // echo 'Mensagem enviada com sucesso!';
+        header('Location: /index.html?status=success');
+        exit();
     } catch (Exception $e) {
         echo "Erro ao enviar mensagem: {$mail->ErrorInfo}";
     }
