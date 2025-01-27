@@ -1,0 +1,11 @@
+dados para teste de envio de email
+RODRIGO
+rodrigo.danieldonha@gmail.com
+Teste de envio e recebimento de email e what´s app!
+
+senha do e-mail profissional
+contato@desejaseguros.com
+k})R\aU(e[FX}7e
+ADDRESS_EMAIL=contato@desejaseguros.com
+PSWD_EMAIL=k})R\aU(e[FX}7e
+

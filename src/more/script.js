@@ -11,7 +11,7 @@ function mostrarMais(id) {
 // fim do verifica e muda a descrição do botão Ler mais... Ler Menos...
 
 // inicio do insere o ano atual no footer para compor o copyright
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {    
     var anoAtual = new Date().getFullYear();
     document.getElementById("anoAtual").textContent = anoAtual;
 });
